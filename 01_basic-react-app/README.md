@@ -9,7 +9,7 @@ This project demonstrates the creation of a basic React app using `create-react-
 1. **Initialize a React App**:
 
    ```bash
-   npx create-react-app my-app
+   npx create-react-app 01_basic-react-app
    ```
 
    This sets up the initial folder structure and installs the necessary dependencies. 🚀
@@ -17,7 +17,7 @@ This project demonstrates the creation of a basic React app using `create-react-
 2. **Navigate to the Project Directory**:
 
    ```bash
-   cd my-app
+   cd 01_basic-react-app
    ```
 
 3. **Start the Development Server**:
@@ -37,7 +37,7 @@ The first file executed is `index.js`, located in the `src` folder. It renders t
 ### Initial Folder Structure:
 
 ```
-my-app/
+01_basic-react-app/
 ├── node_modules/
 ├── public/
 │   ├── index.html
@@ -56,7 +56,7 @@ my-app/
 Unnecessary files like `App.test.js`, logo files, and some CSS files were removed to simplify the structure. 🧹
 
 ```
-  my-app/
+  01_basic-react-app/
 ├── node_modules/
 ├── public/
 │   ├── index.html
@@ -71,7 +71,7 @@ Unnecessary files like `App.test.js`, logo files, and some CSS files were remove
 
 ## Adding an Extra Component
 ```
-my-app/
+01_basic-react-app/
 ├── node_modules/
 ├── public/
 │   ├── index.html
@@ -137,7 +137,7 @@ I will Call You From the extra.js File
 1. Clone or download this repository. 📥
 2. Navigate to the project directory:
    ```bash
-   cd my-app
+   cd 01_basic-react-app
    ```
 3. Install dependencies:
    ```bash
