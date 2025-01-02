@@ -89,6 +89,7 @@ For a deeper dive into React Hooks, check out the **[Facebook React GitHub Repos
 ## 🔍 Detailed Documentation
 
 Explore detailed documentation, output screenshots, and more in **[Google Docs](https://docs.google.com/document/d/1ctpcrVYxu4TZ7CLbSXjdULtTosYhxsgeqypGkwC-bQY/edit?tab=t.126ne1v9oglg)**. 📁
+GitHub Repository for this project: **[03_CounterProject on GitHub](https://github.com/utsavvachhani/react-js-study/tree/main/03_counterProject)** 🔗
 
 ---
 
