@@ -50,8 +50,26 @@ function Login() {
                     lable = "Email: "
                     placeholder="Enter your Email :"
                     type="email"
-                    {...register("email")}
+                    {...register("email", {
+                        required : true,
+                        validate : {
+                            matchMediaPatern : (value) => /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(value) ||
+                            "Email address must be a valid address",
+                        }
+                    })}
                 />
+                <Input 
+                    lable = "Password : "
+                    type = "password"
+                    placeholder = "Enter the Password"
+                    {...register("password",{
+                        required: true,
+                    })}
+                /> 
+                <Button
+                    type='submit'
+                    className='w-full'
+                >Sign in</Button>
             </div>
         </form>
       </div>
