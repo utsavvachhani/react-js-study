@@ -5,4 +5,3 @@ function Contanier({children}) {
 }
 
 export default Contanier
-Con
