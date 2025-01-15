@@ -1,12 +1,11 @@
-import React, { act } from 'react'
-import { Container, Logo, LogoutButton } from '../index.js';
-import { Link } from 'react-redux'
+import React from 'react'
+import { Container, Logo, LogoutButton } from '../index';
+import { Link, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux';
-import { useNavigation } from 'react-router-dom'
  
 function Header() {
   const authStatus = useSelector((state) => state.auth.status) 
-  const navigate = useNavigation()
+  const navigate = useNavigate()
 
   const naIteams = [
     {
@@ -29,6 +28,11 @@ function Header() {
       slug: "/all-posts",
       active : authStatus
     },
+    {
+      name: 'Add Post',
+      slug: "/add-post",
+      active : authStatus
+    },
   ]
 
   return (
@@ -44,7 +48,9 @@ function Header() {
             {naIteams.map((item) => (
               item.active? (
                 <li key={item.name}>
-                  <button className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full' onClick={() => navigate(item.slug)}>{item.name}</button>
+                  <button className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full' 
+                    onClick={() => navigate(item.slug)}
+                  >{item.name}</button>
                 </li>
               ) : null
             ))}

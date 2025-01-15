@@ -1,9 +1,6 @@
 import React,{ useCallback} from 'react'
 import {useForm} from 'react-hook-form'
-import Select from '../index.js'
-import Button from '../Button'
-import RTE from '../index.js'
-import Input from '../Input'
+import {Select, RTE, Button, Input }from '../index.js'
 import appwriteService from '../../appwrite/config'
 import { useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
@@ -23,7 +20,7 @@ function PostForm() {
 
   const submit = async (data) => {
     if(post){
-      const file = data.image[0] ? appwriteService.updatePost(data.image) : null
+      const file = data.image[0] ? appwriteService.updatePost(data.image[0]) : null
       
       if(file){
         appwriteService.deleteFile(post.feacturedImage)

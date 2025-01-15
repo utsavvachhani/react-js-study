@@ -8,19 +8,19 @@ import PostCard from './PostCard'
 import Button from './Button'
 import RTE from "./RTE";
 import Select from "./Select"
-import SignUp from "./Signup";
+import Signup from "./Signup";
 import Login from "./Login"
 import PostForm from "./post-form/PostForm"
 import AuthLayout from "./AuthLayout"
 
-export default{
+export{
     Header,
     Fotter,
     Container,
     Logo,
     LogoutButton,
     RTE,
-    SignUp,
+    Signup,
     Login,
     Button,
     PostForm,

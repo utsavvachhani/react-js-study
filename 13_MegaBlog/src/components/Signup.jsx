@@ -2,7 +2,7 @@ import { useState } from "react"
 import React from 'react'
 import authService from "../appwrite/auth"
 import {Link, useNavigate } from 'react-router-dom'
-import { login as authLogin, login } from '../store/authSlice'
+import { login } from '../store/authSlice'
 import {useForm} from 'react-hook-form'
 import { Button, Input, Logo} from "./index"
 import { useDispatch } from "react-redux"
@@ -11,7 +11,7 @@ function Signup() {
     const navigate = useNavigate();
     const [error, setErrror] =useState("")
     const dispatch = useDispatch()
-    const {register, setRegister} =useForm()
+    const {register, handleSubmit} =useForm()
 
     const create = async(data) => {
         setErrror("")
@@ -44,7 +44,7 @@ function Signup() {
                 </Link>
             </p>
             {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-            <form onSubmit={handleSumbit(create)}>
+            <form onSubmit={handleSubmit(create)}>
                 <div className="space-y-5">
                     <Input 
                         lable="Full Name : "
@@ -75,7 +75,7 @@ function Signup() {
                     />
                     <Button
                         type="submit"
-                        className="w-full"
+                        className="w-full "
                     >Create Account</Button>
                 </div>
             </form>
