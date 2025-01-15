@@ -11,19 +11,21 @@ import Select from "./Select"
 import SignUp from "./Signup";
 import Login from "./Login"
 import PostForm from "./post-form/PostForm"
+import AuthLayout from "./AuthLayout"
 
-export {
+export default{
     Header,
     Fotter,
     Container,
     Logo,
     LogoutButton,
-    Input,
-    PostCard,
-    Button,
     RTE,
-    Select,
     SignUp,
     Login,
-    PostForm
+    Button,
+    PostForm,
+    PostCard,
+    AuthLayout,
+    Input,
+    Select,
 }
